@@ -23,5 +23,6 @@ extension Array where T:NSNumber {
         return total / Double(self.count)
     }
 }
-
-let stdev = [1.0, 2.0, 3.0].map { NSNumber(double:$0) }.stdev
+let doubles = [1.0, 2.0]
+let numbers = doubles.map { NSNumber(double:$0) }
+numbers.stdev
